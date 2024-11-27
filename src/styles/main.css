@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #393646;
+  color: #fff;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 150px;
+}
+
+.container {
+  display: block;
+}
+
+.header-nav {
+  display: flex;
+  background-color: #393646;
+  border: 1px solid #ffffff;
+}
+
+.header-brand {
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 2em;
+  color: white;
+  font-style: italic;
+}
+
+.header-title:hover {
+  color: #b6895b;
+}
+
+.header-mobile {
+  font-size: 32px;
+  line-height: 2;
+  text-decoration: none;
+  padding: 15px;
+  padding-right: 25px;
+  color: white;
+}
+
+.header-mobile:hover {
+  color: #b6895b;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+}
+
+.nav-list {
+  width: 100%;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav a {
+  padding: 22px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  color: #b6895b;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  text-align: center;
+  background-position: center;
+  background-color: black;
+  background-image: url('/src/public/images/heros/hero-image_2.jpg');
+}
+
+.hero-brand {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 35px;
+  font-style: italic;
+  text-shadow: 3px 2px black;
+}
+
+.hero-desc {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 3px 2px black;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 32px;
+}
+
+.explore-list {
+  width: 100%;
+}
+
+.explore-title {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+  margin-top: 35px;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.list-item {
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+}
+
+.list-city {
+  margin-top: 10px;
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.list-name {
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.list-thumb {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.list-desc {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #393646;
+  text-align: center;
+  padding: 1rem 0 1.8rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+footer p:hover {
+  color: #b6895b;
+}
+
+.detail-thumb {
+  width: 100%;
+}
