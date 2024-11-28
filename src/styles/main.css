@@ -162,7 +162,7 @@ main {
   width: 100%;
 }
 
-.list-city {
+.list-city > h1 > a {
   margin-top: 10px;
   font-size: 10px;
   margin-bottom: 5px;

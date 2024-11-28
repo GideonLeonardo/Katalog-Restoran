@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import API_ENDPOINT from '../../globals/api-endpoint';
 
 const createRestaurantItemTemplate = (restaurant) => `
@@ -26,44 +27,29 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <div class="detail-menus">
       <div class="detail-foods">
         <h5>Menu Makanan</h5>
-        <ul>
-          <li>${restaurant.menus.foods[0].name}</li>
-          <li>${restaurant.menus.foods[1].name}</li>
-          <li>${restaurant.menus.foods[2].name}</li>
-          <li>${restaurant.menus.foods[3].name}</li>
-        </ul>
+        <ul>${restaurant.menus.foods.map((food) => `<li>${food.name}</li><hr>`).join('')}</ul>
       </div>
       <div class="detail-drinks">
         <h5>Menu Minuman</h5>
-        <ul>
-          <li>${restaurant.menus.drinks[0].name}</li>
-          <li>${restaurant.menus.drinks[1].name}</li>
-          <li>${restaurant.menus.drinks[2].name}</li>
-          <li>${restaurant.menus.drinks[3].name}</li>
-        </ul>
+        <ul>${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li><hr>`).join('')}</ul>
       </div>
     </div>
+    <hr>
     <div class="detail-review">
       <h6>Hasil Review</h6>
-      <p>"${restaurant.customerReviews[0].review}"</p>
-      <p>Oleh: ${restaurant.customerReviews[0].name} (${restaurant.customerReviews[0].date})</p>
+      ${restaurant.customerReviews
+        .map(
+          (item) => `
+          <div>
+            <h4>${item.name}</h4>
+            <p>${item.review}</p>
+            <hr>
+            <p>${item.date}</p>
+          </div>
+      `
+        )
+        .join('')}
     </div>
-
-    ${restaurant.customerReviews
-    .map(
-      (item) => `
-      <div>
-        <h4>${item.name}</h4>
-        <p>${item.review}</p>
-        <hr>
-        <p>${item.date}</p>
-      </div>
-    `
-    )
-    .join('')}
-
-      <ul>${restaurant.menus.foods.map((food) => `<li>${food.name}</li><hr>`).join('')}</ul>
-      <ul>${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li><hr>`).join('')}</ul>
   </div>
 </div>
 `;
