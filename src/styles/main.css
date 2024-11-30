@@ -164,9 +164,10 @@ main {
 
 .list-city > h1 > a {
   margin-top: 10px;
-  font-size: 10px;
+  font-size: 20px;
   margin-bottom: 5px;
   font-weight: 700;
+  padding-block: 10px;
 }
 
 .list-name {
