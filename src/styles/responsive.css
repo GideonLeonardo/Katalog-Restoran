@@ -35,18 +35,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    min-width: 1000px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .hero {
-    width: 100%;
-  }
-}
-
 .list {
   display: grid;
   grid-row-gap: 32px;
