@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist ",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "build-image": "node sharp.js"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
@@ -34,6 +35,7 @@
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
     "playwright": "^1.49.0",
+    "sharp": "^0.33.5",
     "style-loader": "^3.3.1",
     "webpack": "^5.88.2",
     "webpack-bundle-analyzer": "^4.10.2",

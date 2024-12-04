@@ -11,7 +11,7 @@ const createRestaurantItemTemplate = (restaurant) => `
   </div>
   <img class="lazyload" data-src="${restaurant.pictureId ? API_ENDPOINT.IMG.S + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${
   restaurant.name
-}" crossorigin="anonymous" style="width: 100%; height: 175px; border-radius: 5px;
+}" crossorigin="anonymous" style="width: 100%; height: 175px; border-radius: 5px;"
   </div>
 `;
 
